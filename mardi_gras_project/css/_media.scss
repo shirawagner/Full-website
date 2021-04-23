@@ -1,0 +1,122 @@
+.media{
+    background-color: #FDF8E5;
+    img{
+        transition: all 0.5s ease;
+        filter: grayscale(80%);
+        // position: relative;
+        &:hover{
+            
+            filter: grayscale(0%);
+        }
+    }
+    .container{
+        max-width: 900px;
+    }
+    .all-gallerys{
+        padding: 2em;
+        h1{
+            font-family: 'henny penny';
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 5rem;
+        }
+    }
+    .top-image{
+        font-family: 'henny penny';
+        font-weight: 900;
+        height: 80vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-image: url("https://media.gettyimages.com/photos/venice-carnival-2008-masked-and-costumed-revellers-in-a-sea-of-in-picture-id527436982?k=6&m=527436982&s=612x612&w=0&h=V1kWJC_j41zdtIaRyDw4pwf6P_9CsujIIUa4_JO7Q68=");
+            
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.9;
+        }
+        .content-media{
+            text-align: center;
+            
+            h1,h3{
+                position: relative;
+                color: $white;
+                margin: 1em;
+            }
+            h1{
+                font-size: 4em;
+                width: 80%;
+                margin: 0 auto;
+            }
+            h3{
+                font-family: roboto;
+            }
+        }
+      
+    }
+    div.media-nav{
+        display: flex;
+        position: sticky;
+        z-index: 2000;
+        top: 0;
+        justify-content: center;
+        list-style: none;
+        background-color: transparent;
+        margin-top: 1rem;
+        
+        padding: 0.25em;
+        
+        ul.ul-media{
+            list-style: none;
+            font-weight: 900;
+            color: $purple;
+            margin-top: 2rem;
+            
+            li{
+                font-size: 2rem;
+                padding: 0.5em ;
+                letter-spacing: 1.2px;
+                font-family: 'pattaya';
+                a{
+                    color: $purple;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        color: $yellow;
+                    }
+                }
+                
+            }
+           
+        }
+    }
+    .image-gallery{
+        // display: flex;
+        justify-content: center;
+        text-align: center;
+        // height: 100vh;
+        background-color: $white;
+        .image-gallery-content{
+            padding: 10rem 0 2em;
+
+        }
+        .img{
+            width: 200px;
+            height: 200px;
+        }   
+           
+
+            
+            
+    
+       
+    }
+}
